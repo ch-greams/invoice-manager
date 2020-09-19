@@ -11,9 +11,5 @@
     "url": "git+https://github.com/ch-greams/invoice-manager.git"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ch-greams/invoice-manager/issues"
-  },
-  "homepage": "https://github.com/ch-greams/invoice-manager#readme"
+  "license": "ISC"
 }
