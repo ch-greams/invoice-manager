@@ -1,0 +1,19 @@
+{
+  "name": "invoice-manager",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ch-greams/invoice-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ch-greams/invoice-manager/issues"
+  },
+  "homepage": "https://github.com/ch-greams/invoice-manager#readme"
+}
