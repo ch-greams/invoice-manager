@@ -1,6 +1,6 @@
 const path = require("path");
 
-module.exports = {
+const server = {
     target: "node",
     mode: "production",
     entry: {
@@ -31,3 +31,5 @@ module.exports = {
 
 
 };
+
+module.exports = [ server ];

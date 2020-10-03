@@ -1,14 +1,7 @@
-import express from "express";
-import path from "path";
+import WebApp from "./webApp";
 
-const app = express();
-app.use(express.static("view"));
+const web = new WebApp();
+web.run(3000);
 
-const callback = (_req: express.Request, res: express.Response) => {
-    const fullPath = path.join(__dirname, "view", "index.html");
-    res.sendFile(fullPath);
-};
-
-app.get("/", callback);
-app.get("/help", (_req, res) => res.send("We are here to help U"));
-app.listen(3000);
+const web1 = new WebApp();
+web1.run(8080);
