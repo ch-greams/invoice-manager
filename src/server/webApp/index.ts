@@ -16,6 +16,7 @@ export default class WebApp {
 
     private config(): void {
         this.app.use(express.static("view"));
+        this.app.use(express.static("out"));
     }
 
     private routes(): void {

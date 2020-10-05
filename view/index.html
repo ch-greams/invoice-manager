@@ -1,78 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Invoice Manager</title>
-    <link rel="stylesheet" href="/index.css">
-</head>
+<head id="header"></head>
 
 <body>
     <h1>Hello</h1>
 
-    <div class="divTable">
-        <div class="headRow">
-            <div class="divCell">Consultant</div>
-        </div>
-        <div class="divRow">
-            <div class="divCell">Name</div>
-            <div class="divCell">John Doe</div>
-        </div>
-        <div class="divRow">
-            <div class="divCell">Phone</div>
-            <div class="divCell">1111111</div>
-        </div>
-        <div class="divRow">
-            <div class="divCell">Email</div>
-            <div class="divCell">John@doe.com</div>
-        </div>
-        <div class="divRow">
-            <div class="divCell">Address</div>
-            <div class="divCell">Accra, Ghana</div>
-        </div>
-        <div class="divRow">
-            <div class="divCell"></div>
-            <div class="divCell">2771 John st.</div>
-        </div>
+    <div id="container"></div>
 
-    </div>
+    <table id="table"></table>
 
+    <!-- Dependencies -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
-    <table style="width:100%">
-        <tr>
-            <th>Timesheet</th>
-        </tr>
-        <tr>
-            <th>Date</th>
-            <th>Hours</th>
-            <th>Rate</th>
-            <th>Amount</th>
-        </tr>
-        <tr>
-            <td>8/11/2020</td>
-            <td>7</td>
-            <td>30</td>
-            <td>210</td>
-        </tr>
-        <tr>
-            <td>8/12/2020</td>
-            <td>3</td>
-            <td>30</td>
-            <td>90</td>
-        </tr>
-        <tr>
-            <td>8/13/2020</td>
-            <td>3</td>
-            <td>60</td>
-            <td>180</td>
-        </tr>
-        <tr>
-            <td>8/14/2020</td>
-            <td>8</td>
-            <td>30</td>
-            <td>240</td>
-        </tr>
-
-    </table>
+    <script src="/client.bundle.js"></script>
 </body>
 
 </html>
