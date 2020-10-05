@@ -1,12 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const headerElement: JSX.Element = (
-    <head>
-    <title>Invoice Manager</title>
-    <link rel="stylesheet" href="/index.css"></link>
-    </head>
-);
 
 const name = "John Doe";
 
@@ -79,6 +73,13 @@ const tableElement: JSX.Element = (
     </table>
 );
 
-ReactDOM.render(consultantElement, document.getElementById("container"));
-ReactDOM.render(tableElement, document.getElementById("table"));
-ReactDOM.render(headerElement, document.getElementById("header"));
+const twoTablesAndHeaderElement =(
+    <div className={"divTable"}>
+        <h1>Hello</h1>
+        {consultantElement}
+        {tableElement}
+    </div>
+);
+
+ReactDOM.render(twoTablesAndHeaderElement, document.getElementById("container"));
+
