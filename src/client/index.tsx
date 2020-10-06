@@ -5,72 +5,62 @@ import ReactDOM from "react-dom";
 const name = "John Doe";
 
 const consultantElement: JSX.Element = (
-    <div className={"divTable"}>
-        <div className={"headRow"}>
-            <div className={"divCell"}>{"Consultant"}</div>
-        </div>
-        <div className={"divRow"}>
-            <div className={"divCell"}>{"Name"}</div>
-            <div className={"divCell"}>{name}</div>
-        </div>
-        <div className={"divRow"}>
-            <div className={"divCell"}>{"Phone"}</div>
-            <div className={"divCell"}>{"1111111"}</div>
-        </div>
-        <div className={"divRow"}>
-            <div className={"divCell"}>{"Email"}</div>
-            <div className={"divCell"}>{"John@doe.com"}</div>
-        </div>
-        <div className={"divRow"}>
-            <div className={"divCell"}>{"Address"}</div>
-            <div className={"divCell"}>{"Accra, Ghana"}</div>
-        </div>
-        <div className={"divRow"}>
-            <div className={"divCell"}>{""}</div>
-            <div className={"divCell"}>{"2771 John st."}</div>
-        </div>
+    <div className="Rtable Rtable--2cols">
+        <div className="Rtable-cell"><h3>{"Consultant"}</h3></div>
+        <div className="Rtable-cell"></div>
 
+         <div className="Rtable-cell"><h3>{"Name"}</h3></div>
+         <div className="Rtable-cell">{name}</div>
+
+         <div className="Rtable-cell"><h3>{"Phone"}</h3></div>
+         <div className="Rtable-cell">{"11111"}</div>
+
+         <div className="Rtable-cell"><h3>{"Email"}</h3></div>
+         <div className="Rtable-cell">{"John@doe.com"}</div>
+
+         <div className="Rtable-cell"><h3>{"Address"}</h3></div>
+         <div className="Rtable-cell">{"Accra, Ghana"}</div>
+
+         <div className="Rtable-cell"></div>
+         <div className="Rtable-cell">{"2771 John st."}</div>
     </div>
 
 );
 
 const tableElement: JSX.Element = (
-    <table>
-        <tr>
-            <th>Timesheet</th>
-        </tr>
-        <tr>
-            <th>Date</th>
-            <th>Hours</th>
-            <th>Rate</th>
-            <th>Amount</th>
-        </tr>
-        <tr>
-            <td>8/11/2020</td>
-            <td>7</td>
-            <td>30</td>
-            <td>210</td>
-        </tr>
-        <tr>
-            <td>8/12/2020</td>
-            <td>3</td>
-            <td>30</td>
-            <td>90</td>
-        </tr>
-        <tr>
-            <td>8/13/2020</td>
-            <td>3</td>
-            <td>60</td>
-            <td>180</td>
-        </tr>
-        <tr>
-            <td>8/14/2020</td>
-            <td>8</td>
-            <td>30</td>
-            <td>240</td>
-        </tr>
+    <div className="Rtable Rtable--5cols">
 
-    </table>
+  <div className="Rtable-cell"><h3>{"Timesheet"}</h3></div>
+  <div className="Rtable-cell"></div>
+  <div className="Rtable-cell"></div>
+  <div className="Rtable-cell"></div>
+  <div className="Rtable-cell"></div>
+  
+  <div className="Rtable-cell"><h3>{"Date"}</h3></div>
+  <div className="Rtable-cell">{"8/11/2020"}</div>
+  <div className="Rtable-cell">{"8/12/2020"}</div>
+  <div className="Rtable-cell">{"8/13/2020"}</div>
+  <div className="Rtable-cell">{"8/14/2020"}</div>
+
+  <div className="Rtable-cell"><h3>{"Hours"}</h3></div>
+  <div className="Rtable-cell">{"7"}</div>
+  <div className="Rtable-cell">{"3"}</div>
+  <div className="Rtable-cell">{"3"}</div>
+  <div className="Rtable-cell">{"8"}</div>
+
+  <div className="Rtable-cell"><h3>{"Rate"}</h3></div>
+  <div className="Rtable-cell">{"30"}</div>
+  <div className="Rtable-cell">{"30"}</div>
+  <div className="Rtable-cell">{"60"}</div>
+  <div className="Rtable-cell">{"30"}</div>
+
+  <div className="Rtable-cell"><h3>{"Amount"}</h3></div>
+  <div className="Rtable-cell">{"210"}</div>
+  <div className="Rtable-cell">{"90"}</div>
+  <div className="Rtable-cell">{"180"}</div>
+  <div className="Rtable-cell">{"240"}</div>
+
+</div>
 );
 
 const twoTablesAndHeaderElement =(
