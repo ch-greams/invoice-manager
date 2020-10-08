@@ -5,123 +5,113 @@ import ReactDOM from "react-dom";
 const name = "John Doe";
 
 const consultantElement: JSX.Element = (
-    <div className="box">
-        <div className="row">
-            <div className="column">{"Consultant"}</div>
-            <div className="column">{""}</div>
+    <div className={"box"}>
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>{"Consultant"}</div>
         </div>
-        <div className="row">
-            <div className="column">{"Name"}</div>
-            <div className="column">{name}</div>
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>{"Name"}</div>
+            <div className={"tableCell"}>{name}</div>
         </div>
-        <div className="row">
-            <div className="column">{"Phone"}</div>
-            <div className="column">{"11111"}</div>
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>{"Phone"}</div>
+            <div className={"tableCell"}>{"11111"}</div>
         </div>
-        <div className="row">
-            <div className="column">{"Email"}</div>
-            <div className="column">{"john@doe.com"}</div>
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>{"Email"}</div>
+            <div className={"tableCell"}>{"john@doe.com"}</div>
         </div>
-        <div className="row">
-            <div className="column">{"Address"}</div>
-            <div className="column">{"Accra, Ghana"}</div>
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>{"Address"}</div>
+            <div className={"tableCell"}>{"Accra, Ghana"}</div>
         </div>
-        <div className="row">
-            <div className="column">{""}</div>
-            <div className="column">{"2771 John st."}</div>
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>{""}</div>
+            <div className={"tableCell"}>{"2771 John st."}</div>
         </div>
     </div>
 
 );
 
 const tableElement: JSX.Element = (
-    <div className="box">
-        <div className="row">
-            <div className="column">
+    <div className={"box"}>
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>
                 {"Timesheet"}
-            </div>
-            <div className="column">
-                {""}
-            </div>
-            <div className="column">
-                {""}
-            </div>
-            <div className="column">
-                {""}
             </div>
         </div>
 
-        <div className="row">
-            <div className="column">
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>
                 {"Date"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"Hours"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"Rate"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"Amount"}
             </div>
         </div>
 
-        <div className="row">
-            <div className="column">
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>
                 {"8/11/2020"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"7"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"30"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"210"}
             </div>
         </div>
 
-        <div className="row">
-            <div className="column">
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>
                 {"8/12/2020"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"3"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"30"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"90"}
             </div>
         </div>
 
-        <div className="row">
-            <div className="column">
+        <div className={"tableRow"}>
+            <div className={"tableCell"}>
                 {"8/13/2020"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"3"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"60"}
             </div>
-            <div className="column">
+            <div className={"tableCell"}>
                 {"180"}
             </div>
         </div>
 
-        <div className='row'>
-            <div className='column'>
+        <div className={'tableRow'}>
+            <div className={'tableCell'}>
                 {"8/14/2020"}
             </div>
-            <div className='column'>
+            <div className={'tableCell'}>
                 {"8"}
             </div>
-            <div className='column'>
+            <div className={'tableCell'}>
                 {"30"}
             </div>
-            <div className='column'>
+            <div className={'tableCell'}>
                 {"240"}
             </div>
         </div>

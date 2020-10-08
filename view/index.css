@@ -1,21 +1,17 @@
 .box {
-background-color: #009988;
+    background-color: #009988;
     margin: 15px;
+    border: 1px solid #000;
 }
 
-.row {
+.tableRow {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     border: 1px solid #000;
-    border-collapse: collapse;
 }
 
-.column {
+.tableCell {
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
     flex: 1;
     border: 1px solid #000;
-    border-collapse: collapse;
 }
