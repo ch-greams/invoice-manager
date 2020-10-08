@@ -13,13 +13,13 @@ const consultantLines: ConsultantParameter[] = [
     },
 ];
 
-consultantLines.map((element: ConsultantParameter) => {
+/* consultantLines.map((element: ConsultantParameter) => {
     return (
         <div>
             {element}
         </div>
     );
-})
+}) */
 
 /* const consultantRow: JSX.Element = (
     <div className={"tableRow"}>
@@ -35,8 +35,11 @@ const consultantElement: JSX.Element = (
         </div>
         {consultantLines.map((element: ConsultantParameter) => {
             return (
-                <div>
-                    {element}
+                <div key={"element"}>
+                    <div className={"tableRow"}>
+                        <div className={"tableCell"}>{element.label}</div>
+                        <div className={"tableCell"}>{element.value}</div>
+                    </div>
                 </div>
             );
         })}
