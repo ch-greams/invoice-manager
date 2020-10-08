@@ -1,20 +1,22 @@
+.box {
+background-color: #009988;
+    margin: 15px;
+}
 
-.Rtable {
+.row {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 0 3em 0;
-    padding: 0;
-  }
-  .Rtable-cell {
-    box-sizing: border-box;
-    flex-grow: 1;
     width: 100%;
-    padding: 0.8em 1.2em;
-    overflow: hidden;
-    list-style: none;
-    border: solid;
-    background: fade(slategrey,20%);
-  }
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
 
-  .Rtable--2cols > .Rtable-cell  { width: 50%; }
-  .Rtable--5cols > .Rtable-cell  { width: 20%; }
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
