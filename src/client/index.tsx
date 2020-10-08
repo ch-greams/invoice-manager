@@ -35,11 +35,9 @@ const consultantElement: JSX.Element = (
         </div>
         {consultantLines.map((element: ConsultantParameter) => {
             return (
-                <div key={"element"}>
-                    <div className={"tableRow"}>
-                        <div className={"tableCell"}>{element.label}</div>
-                        <div className={"tableCell"}>{element.value}</div>
-                    </div>
+                <div key={element.label} className={"tableRow"}>
+                    <div className={"tableCell"}>{element.label}</div>
+                    <div className={"tableCell"}>{element.value}</div>
                 </div>
             );
         })}
