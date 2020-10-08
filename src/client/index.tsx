@@ -1,18 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+interface ConsultantParameter {
+    label: string;
+    value: string;
+}
 
-const name = "John Doe";
+const consultantLines: ConsultantParameter[] = [{
+    label: "Name",
+    value: "John Doe",
+}]
+
+const consultantRow: JSX.Element = (
+    <div className={"tableRow"}>
+        <div className={"tableCell"}>{consultantLines[0].label}</div>
+        <div className={"tableCell"}>{consultantLines[0].value}</div>
+    </div>
+)
 
 const consultantElement: JSX.Element = (
     <div className={"box"}>
         <div className={"tableRow"}>
             <div className={"tableCell"}>{"Consultant"}</div>
         </div>
-        <div className={"tableRow"}>
-            <div className={"tableCell"}>{"Name"}</div>
-            <div className={"tableCell"}>{name}</div>
-        </div>
+        {consultantRow}
         <div className={"tableRow"}>
             <div className={"tableCell"}>{"Phone"}</div>
             <div className={"tableCell"}>{"11111"}</div>
@@ -128,4 +139,3 @@ const twoTablesAndHeaderElement = (
 );
 
 ReactDOM.render(twoTablesAndHeaderElement, document.getElementById("container"));
-
