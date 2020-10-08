@@ -6,24 +6,40 @@ interface ConsultantParameter {
     value: string;
 }
 
-const consultantLines: ConsultantParameter[] = [{
-    label: "Name",
-    value: "John Doe",
-}]
+const consultantLines: ConsultantParameter[] = [
+    {
+        label: "Name",
+        value: "John Doe",
+    },
+];
 
-const consultantRow: JSX.Element = (
+consultantLines.map((element: ConsultantParameter) => {
+    return (
+        <div>
+            {element}
+        </div>
+    );
+})
+
+/* const consultantRow: JSX.Element = (
     <div className={"tableRow"}>
         <div className={"tableCell"}>{consultantLines[0].label}</div>
         <div className={"tableCell"}>{consultantLines[0].value}</div>
     </div>
-)
+); */
 
 const consultantElement: JSX.Element = (
     <div className={"box"}>
         <div className={"tableRow"}>
             <div className={"tableCell"}>{"Consultant"}</div>
         </div>
-        {consultantRow}
+        {consultantLines.map((element: ConsultantParameter) => {
+            return (
+                <div>
+                    {element}
+                </div>
+            );
+        })}
         <div className={"tableRow"}>
             <div className={"tableCell"}>{"Phone"}</div>
             <div className={"tableCell"}>{"11111"}</div>
