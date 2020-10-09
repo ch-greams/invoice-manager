@@ -6,10 +6,61 @@ interface ConsultantParameter {
     value: string;
 }
 
+interface TableParameter {
+    dateValue: string;
+    hoursValue: number;
+    rateValue: number;
+    amountValue: number;
+}
+
+const tableLines: TableParameter[] = [
+    {
+        dateValue: "8/11/2020",
+        hoursValue: 7,
+        rateValue: 30,
+        amountValue: 210,
+    },
+    {
+        dateValue: "8/12/2020",
+        hoursValue: 3,
+        rateValue: 30,
+        amountValue: 90,
+    },
+    {
+        dateValue: "8/13/2020",
+        hoursValue: 3,
+        rateValue: 60,
+        amountValue: 180,
+    },
+    {
+        dateValue: "8/14/2020",
+        hoursValue: 8,
+        rateValue: 30,
+        amountValue: 240
+    },
+
+]
+
 const consultantLines: ConsultantParameter[] = [
     {
         label: "Name",
         value: "John Doe",
+    },
+    {
+        label: "Phone",
+        value: "11111",
+    },
+    {
+        label: "Email",
+        value: "john@doe.com",
+    },
+    {
+        label: "Address",
+        value: "Accra, Ghana",
+    },
+    {
+        label: "",
+        value: "2771 John st.",
     },
 ];
 
@@ -41,24 +92,7 @@ const consultantElement: JSX.Element = (
                 </div>
             );
         })}
-        <div className={"tableRow"}>
-            <div className={"tableCell"}>{"Phone"}</div>
-            <div className={"tableCell"}>{"11111"}</div>
-        </div>
-        <div className={"tableRow"}>
-            <div className={"tableCell"}>{"Email"}</div>
-            <div className={"tableCell"}>{"john@doe.com"}</div>
-        </div>
-        <div className={"tableRow"}>
-            <div className={"tableCell"}>{"Address"}</div>
-            <div className={"tableCell"}>{"Accra, Ghana"}</div>
-        </div>
-        <div className={"tableRow"}>
-            <div className={"tableCell"}>{""}</div>
-            <div className={"tableCell"}>{"2771 John st."}</div>
-        </div>
     </div>
-
 );
 
 const tableElement: JSX.Element = (
@@ -68,7 +102,6 @@ const tableElement: JSX.Element = (
                 {"Timesheet"}
             </div>
         </div>
-
         <div className={"tableRow"}>
             <div className={"tableCell"}>
                 {"Date"}
@@ -83,67 +116,16 @@ const tableElement: JSX.Element = (
                 {"Amount"}
             </div>
         </div>
-
-        <div className={"tableRow"}>
-            <div className={"tableCell"}>
-                {"8/11/2020"}
-            </div>
-            <div className={"tableCell"}>
-                {"7"}
-            </div>
-            <div className={"tableCell"}>
-                {"30"}
-            </div>
-            <div className={"tableCell"}>
-                {"210"}
-            </div>
-        </div>
-
-        <div className={"tableRow"}>
-            <div className={"tableCell"}>
-                {"8/12/2020"}
-            </div>
-            <div className={"tableCell"}>
-                {"3"}
-            </div>
-            <div className={"tableCell"}>
-                {"30"}
-            </div>
-            <div className={"tableCell"}>
-                {"90"}
-            </div>
-        </div>
-
-        <div className={"tableRow"}>
-            <div className={"tableCell"}>
-                {"8/13/2020"}
-            </div>
-            <div className={"tableCell"}>
-                {"3"}
-            </div>
-            <div className={"tableCell"}>
-                {"60"}
-            </div>
-            <div className={"tableCell"}>
-                {"180"}
-            </div>
-        </div>
-
-        <div className={'tableRow'}>
-            <div className={'tableCell'}>
-                {"8/14/2020"}
-            </div>
-            <div className={'tableCell'}>
-                {"8"}
-            </div>
-            <div className={'tableCell'}>
-                {"30"}
-            </div>
-            <div className={'tableCell'}>
-                {"240"}
-            </div>
-        </div>
-
+        {tableLines.map((element: TableParameter) => {
+            return (
+                <div key={element.amountValue} className={"tableRow"}>
+                    <div className={"tableCell"}>{element.dateValue}</div>
+                    <div className={"tableCell"}>{element.hoursValue}</div>
+                    <div className={"tableCell"}>{element.rateValue}</div>
+                    <div className={"tableCell"}>{element.amountValue}</div>
+                </div>
+            );
+        })}
     </div>
 );
 
