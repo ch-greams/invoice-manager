@@ -15,3 +15,7 @@
     flex: 1;
     border: 1px solid #000;
 }
+
+.textLabel {
+    font-weight: 900;
+}

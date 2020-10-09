@@ -36,10 +36,10 @@ const tableLines: TableParameter[] = [
         dateValue: "8/14/2020",
         hoursValue: 8,
         rateValue: 30,
-        amountValue: 240
+        amountValue: 240,
     },
 
-]
+];
 
 const consultantLines: ConsultantParameter[] = [
     {
@@ -81,7 +81,7 @@ const consultantLines: ConsultantParameter[] = [
 
 const consultantElement: JSX.Element = (
     <div className={"box"}>
-        <div className={"tableRow"}>
+        <div className={"tableRow textLabel"}>
             <div className={"tableCell"}>{"Consultant"}</div>
         </div>
         {consultantLines.map((element: ConsultantParameter) => {
@@ -97,12 +97,12 @@ const consultantElement: JSX.Element = (
 
 const tableElement: JSX.Element = (
     <div className={"box"}>
-        <div className={"tableRow"}>
+        <div className={"tableRow textLabel"}>
             <div className={"tableCell"}>
                 {"Timesheet"}
             </div>
         </div>
-        <div className={"tableRow"}>
+        <div className={"tableRow textLabel"}>
             <div className={"tableCell"}>
                 {"Date"}
             </div>
