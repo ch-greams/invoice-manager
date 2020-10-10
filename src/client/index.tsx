@@ -1,68 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-interface ConsultantParameter {
-    label: string;
-    value: string;
-}
-
-interface TableParameter {
-    dateValue: string;
-    hoursValue: number;
-    rateValue: number;
-    amountValue: number;
-}
-
-const tableLines: TableParameter[] = [
-    {
-        dateValue: "8/11/2020",
-        hoursValue: 7,
-        rateValue: 30,
-        amountValue: 210,
-    },
-    {
-        dateValue: "8/12/2020",
-        hoursValue: 3,
-        rateValue: 30,
-        amountValue: 90,
-    },
-    {
-        dateValue: "8/13/2020",
-        hoursValue: 3,
-        rateValue: 60,
-        amountValue: 180,
-    },
-    {
-        dateValue: "8/14/2020",
-        hoursValue: 8,
-        rateValue: 30,
-        amountValue: 240,
-    },
-
-];
-
-const consultantLines: ConsultantParameter[] = [
-    {
-        label: "Name",
-        value: "John Doe",
-    },
-    {
-        label: "Phone",
-        value: "11111",
-    },
-    {
-        label: "Email",
-        value: "john@doe.com",
-    },
-    {
-        label: "Address",
-        value: "Accra, Ghana",
-    },
-    {
-        label: "",
-        value: "2771 John st.",
-    },
-];
+import App from "./App";
 
 /* consultantLines.map((element: ConsultantParameter) => {
     return (
@@ -79,7 +17,7 @@ const consultantLines: ConsultantParameter[] = [
     </div>
 ); */
 
-const consultantElement: JSX.Element = (
+/* const consultantElement: JSX.Element = (
     <div className={"box"}>
         <div className={"tableRow textLabel"}>
             <div className={"tableCell"}>{"Consultant"}</div>
@@ -127,14 +65,15 @@ const tableElement: JSX.Element = (
             );
         })}
     </div>
-);
+); */
 
-const twoTablesAndHeaderElement = (
+/* const twoTablesAndHeaderElement = (
     <div>
         <h1>Hello</h1>
         {consultantElement}
         {tableElement}
     </div>
 );
+ */
 
-ReactDOM.render(twoTablesAndHeaderElement, document.getElementById("container"));
+ReactDOM.render(<App />, document.getElementById("content"));
