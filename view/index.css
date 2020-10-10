@@ -1,0 +1,21 @@
+.box {
+    background-color: #009988;
+    margin: 15px;
+    border: 1px solid #000;
+}
+
+.tableRow {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+}
+
+.tableCell {
+    display: flex;
+    flex: 1;
+    border: 1px solid #000;
+}
+
+.textLabel {
+    font-weight: 900;
+}

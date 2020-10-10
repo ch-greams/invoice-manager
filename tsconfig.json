@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "out",
+        "baseUrl": ".",
+        "moduleResolution": "node",
+        "lib":[
+            "ES2017",
+            "DOM"
+        ],
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "typeRoots": ["./node_modules/@types","./typings"]
+    },
+    "include": ["./src/**/*","./typings"]
+}
