@@ -1,31 +1,9 @@
 import React from "react";
 import ConsultantBlock from "./ConsultantBlock";
 import Timesheet from "./Timesheet";
+import { TableParameter } from "./Timesheet";
 
-const consultantLines: any = [
-    {
-        label: "Name",
-        value: "John Doe",
-    },
-    {
-        label: "Phone",
-        value: "11111",
-    },
-    {
-        label: "Email",
-        value: "john@doe.com",
-    },
-    {
-        label: "Address",
-        value: "Accra, Ghana",
-    },
-    {
-        label: "",
-        value: "2771 John st.",
-    },
-];
-
-const tableLines: any = [
+const tableLines: TableParameter[] = [
     {
         dateValue: "8/11/2020",
         hoursValue: 7,
@@ -53,17 +31,13 @@ const tableLines: any = [
 
 ];
 
-interface Props {
-    props: any
-}
-
-class App extends React.Component<Props> {
+class App extends React.Component {
     public render(): JSX.Element {
         return (
             <div>
                 <h1>Hello</h1>
-                <ConsultantBlock props={consultantLines}></ConsultantBlock>
-                <Timesheet props={tableLines}></Timesheet>
+                <ConsultantBlock name="John Doe" phone="11111" email="john@doe.com" addressFirst="Accra, Ghana" addressSecond="2771 John st."></ConsultantBlock>
+                <Timesheet data={tableLines}></Timesheet>
             </div>
         );
     };
