@@ -56,4 +56,4 @@ class ConsultantBlock extends React.Component<Props> {
     };
 };
 
-export default { ConsultantBlock };
+export default ConsultantBlock;

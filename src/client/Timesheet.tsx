@@ -1,6 +1,6 @@
 import React from "react"
 
-interface TableParameter {
+export interface TableParameter {
     dateValue: string;
     hoursValue: number;
     rateValue: number;
@@ -8,22 +8,12 @@ interface TableParameter {
 }
 
 interface Props {
-    date: string;
-    hours: number;
-    rate: number;
-    amount: number;
+    data: TableParameter[];
 }
 
-class Timesheet extends React.Component<Props> {
+export default class Timesheet extends React.Component<Props> {
     public render(): JSX.Element {
-        const tableLines: TableParameter[] = [
-            {
-                dateValue: this.props.date,
-                hoursValue: this.props.hours,
-                rateValue: this.props.rate,
-                amountValue: this.props.amount,
-            },      
-        ];
+        const tableLines: TableParameter[] = this.props.data;
         return (
             <div className={"box"}>
                 <div className={"tableRow textLabel"}>
@@ -49,5 +39,3 @@ class Timesheet extends React.Component<Props> {
         );
     };
 };
-
-export default { Timesheet };
