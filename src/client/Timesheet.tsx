@@ -1,10 +1,9 @@
-import React from "react"
+import React from "react";
 
 export interface TableParameter {
     dateValue: string;
     hoursValue: number;
     rateValue: number;
-    amountValue: number;
 }
 
 interface Props {
@@ -27,15 +26,15 @@ export default class Timesheet extends React.Component<Props> {
                 </div>
                 {tableLines.map((element: TableParameter) => {
                     return (
-                        <div key={element.amountValue} className={"tableRow"}>
+                        <div key={element.dateValue} className={"tableRow"}>
                             <div className={"tableCell"}>{element.dateValue}</div>
                             <div className={"tableCell"}>{element.hoursValue}</div>
                             <div className={"tableCell"}>{element.rateValue}</div>
-                            <div className={"tableCell"}>{element.amountValue}</div>
+                            <div className={"tableCell"}>{element.hoursValue * element.rateValue}</div>
                         </div>
                     );
                 })}
             </div>
         );
-    };
-};
+    }
+}
